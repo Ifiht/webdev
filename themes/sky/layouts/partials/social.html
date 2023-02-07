@@ -1,3 +1,6 @@
+{{ with .Site.Params.EthereumID }}
+<li><a href="https://app.ens.domains/name/{{.}}/details" rel="me" title="Ethereum"><i class="fa-brands fa-ethereum" aria-hidden="true"></i></a></li>
+{{ end }}
 {{ with .Site.Params.GnuPGFingerprint }}
 <li><a href="https://pgp.key-server.io/pks/lookup?op=vindex&search=0x{{.}}" title="GPG"><i class="fa fa-unlock-alt" aria-hidden="true"></i></a></li>
 {{ end }}
@@ -5,13 +8,16 @@
 <li><a href="https://stackexchange.com/users/{{.}}" title="StackExchange" rel="me"><i class="fa fa-stack-exchange" aria-hidden="true"></i></a></li>
 {{ end }}
 {{ with .Site.Params.StackOverflowID }}
-<li><a href="https://stackoverflow.com/users/{{.}}" title="StackExchange"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+<li><a href="https://stackoverflow.com/users/{{.}}" title="StackOverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
 {{ end }}
 {{ with .Site.Params.SlackURL }}
 <li><a href="{{.}}" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a></li>
 {{ end }}
 {{ with .Site.Params.TwitterID }}
 <li><a href="https://twitter.com/{{.}}" rel="me" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+{{ end }}
+{{ with .Site.Params.MastadonID }}
+<li><a href="https://twitter.com/{{.}}" rel="me" title="Twitter"><i class="fa-brands fa-mastodon" aria-hidden="true"></i></a></li>
 {{ end }}
 {{ with .Site.Params.GoogleplusID }}
 <li><a href="https://plus.google.com/{{.}}/about" rel="me" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>

@@ -3,12 +3,13 @@ languageCode = 'en-us'
 title = 'Eclectic Peddler Atelier'
 theme = 'sky'
 disqusShortname = "your_disqus_shortname"
+contentDir = "./content"
 
 [menu]
   [[menu.header]]
-    name = "blog"
+    name = "portfolio"
     weight = 0
-    url = "/blog"
+    url = "/portfolio"
   [[menu.header]]
     name = "about"
     weight = 0
@@ -17,9 +18,8 @@ disqusShortname = "your_disqus_shortname"
 
 [params]
   GithubID = "Ifiht"
-  LinkedInID = "your_linkedin"
-  TelegramID = "your_telegram"
-  SlackURL = "your_slack_invite_url"
+  StackOverflowID = "12027622/ifiht"
+  EthereumID = "ifiht.eth"
   Name = "Eclectic Peddler Atelier, LLC."
   Email = "eclecticpeddlerllc@gmail.comDELETETHISTOPROVEYOUAREHUMAN"
   tagline = "Full Stack Developer"
