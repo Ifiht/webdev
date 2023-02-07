@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../fonts/Inconsolata-VariableFont_wdth,wght.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Tangerine';
+  src: url('../fonts/Tangerine-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 
 html {
 	height: 100%;
