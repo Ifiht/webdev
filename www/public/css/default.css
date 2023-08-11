@@ -40,6 +40,10 @@ nav {
 	font-size: 2rem;
 }
 
+hr {
+	color: #bf9d77;
+}
+
 .dropdown-menu li
 {
 	font-size: 2rem;
@@ -83,6 +87,12 @@ ul.nav a:hover {
 .comments {
     color: white;
 }
+
+.badge.pull-right {
+	color: #42000d
+}
+
+
 
 #home-container {
 	margin-top:120px;
@@ -129,7 +139,7 @@ ul.nav a:hover {
     font-size: 7rem;
     line-height: 1.1;
     text-align: center;
-    color: #ddd; }
+    color: #bf9d77; }
 
 .profile-pic {
     position: relative;
