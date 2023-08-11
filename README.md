@@ -1,3 +1,4 @@
+![deploy](https://github.com/Ifiht/webdev/actions/workflows/hugo.yml/badge.svg)
 # webdev
 
 ## Creating New Posts:
