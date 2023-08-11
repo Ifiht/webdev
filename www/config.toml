@@ -14,7 +14,10 @@ contentDir = "./content"
     name = "about"
     weight = 0
     url = "/about"
-
+  [[menu.header]]
+    name = "blog"
+    weight = 0
+    url = "/blog"
 
 [params]
   GithubID = "Ifiht"
@@ -25,3 +28,6 @@ contentDir = "./content"
   tagline = "Full Stack Developer"
   about = ""
   ProfilePicture = "/profile.png"
+
+[markup.goldmark.renderer]
+  unsafe=true
