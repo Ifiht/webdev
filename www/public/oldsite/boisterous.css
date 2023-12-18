@@ -1,0 +1,309 @@
+html,body
+{
+	width:100%;
+	max-width:1920px;
+	min-width:640px;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow-x:hidden
+}
+
+button
+{
+	color:#fff;
+	background-color:#b9b9b9;
+	font-size:14px;
+	font-family:"Calisto MT",Calisto,serif;
+	z-index:3
+}
+/*------------ TABLE -------------*/
+button:hover
+{
+	background-color:#aaa;
+	z-index:4
+}
+
+td.c1 {
+	height: 25px;
+	width: 25px;
+	background-color: transparent;
+	transition: background-color 0.5s ease;
+}
+td.c2 {
+	height: 25px;
+	width: 175px;
+	background-color: #777777;
+	text-align: center;
+	transition: background-color 0.5s ease;
+}
+tr.colorshift:hover > td {
+  background-color: #990088;
+}
+
+footer
+{
+	position: absolute;
+    width: 500px;
+    height: 155px;
+    margin: 0 auto -155px;
+   	float:bottom;
+}
+
+hr
+{
+	margin-top:26px;
+	padding:0;
+	margin-bottom:26px;
+}
+
+p
+{
+	margin-top:inherit;
+	margin-bottom:inherit;
+	font-style:inherit;
+}
+.code
+{
+	font-family:"Menlo",Courier,monospace;
+	font-size:11px;
+	line-height:1;
+	margin-bottom:0.1em;
+	margin-bottom:0.1em;
+}
+
+.date
+{
+	color:#555;
+	font-style:italic;
+	margin-bottom:1em;
+	margin-bottom:1em;
+}
+
+.quote
+{
+	color:#555;
+	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	font-size:13px;
+	font-style:italic;
+	margin-bottom:0.1em;
+	margin-bottom:0.1em;
+}
+
+#titletext
+{
+	font-family:"Calisto MT",Georgia,serif;
+	width:100%;
+	font-size:28px
+}
+
+#header
+{
+	background-image:url(images/title_hd.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#EFEFEF;
+	position:absolute;
+	font-size:28px;
+	margin-bottom:0px;
+	float:center;
+	font-weight:400;
+	text-align:center;
+	z-index:0;
+	height:104px;
+	padding:0;
+	width:99.7%;
+	overflow:hidden
+}
+
+#fade-left
+{
+	z-index:0;
+	float:left;
+	width:159px
+}
+
+#fade-right
+{
+	z-index:0;
+	float:right;
+	width:159px
+}
+
+#floater
+{
+	opacity:1;
+	background-color:#EFEFEF;
+	width:135px;
+	height:100px;
+	position:fixed;
+	margin-top:0;
+	margin-left:0;
+	margin-right:auto;
+	float:top;
+	z-index:-1
+}
+
+#menu
+{
+	opacity:1;
+	background-color: #333333;
+	text-align:left;
+	position:fixed;
+	float:top;
+	height:100px;
+	width:135px;
+	margin-top:0;
+	margin-left:0;
+	margin-right:auto;
+	z-index:9
+}
+
+#blog
+{
+	margin-top:110px;
+	padding-left:140px;
+	margin-left:4%;
+	margin-right:16%;
+	position:absolute;
+	width:63%;
+}
+
+#subblog
+{
+	text-align:left;
+	position:absolute;
+	color:#000;
+	font-family:"Calisto MT",Georgia,serif;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+#leftbar{
+	opacity:.23;
+	position:absolute;
+	left:5px;
+	width:1.5%;
+	height:3500px;
+	background-color:#40B3DF
+}
+#leftbar1{
+	opacity:.2;
+	position:absolute;
+	left:5px;
+	width:3%;
+	height:3500px;
+	background-color:#40B3DF
+}
+#leftbar2{
+	opacity:.17;
+	position:absolute;
+	left:5px;
+	width:4.5%;
+	height:3500px;
+	background-color:#40B3DF
+}
+#leftbar3{
+	opacity:.14;
+	position:absolute;
+	left:5px;
+	width:6%;
+	height:3500px;
+	background-color:#40B3DF
+}
+#leftbar4{
+	opacity:.11;
+	position:absolute;
+	left:5px;
+	width:7.5%;
+	height:685px;
+	background-color:#40B3DF
+}
+#leftbar5{
+	opacity:.08;
+	position:absolute;
+	left:5px;
+	width:9%;
+	height:424px;
+	background-color:#40B3DF
+}
+#leftbar6{
+	opacity:.05;
+	position:absolute;
+	left:5px;
+	width:10.5%;
+	height:262px;
+	background-color:#40B3DF
+}
+#leftbar7{
+	opacity:.02;
+	position:absolute;
+	left:5px;
+	width:12%;
+	height:162px;
+	background-color:#40B3DF
+}
+#rightbar{
+	opacity:.23;
+	position:absolute;
+	right:5px;
+	width:1.5%;
+	height:3500px;
+	background-color:#EFDF40
+}
+#rightbar1{
+	opacity:.2;
+	position:absolute;
+	right:5px;
+	width:3%;
+	height:3500px;
+	background-color:#EFDF40
+}
+#rightbar2{
+	opacity:.17;
+	position:absolute;
+	right:5px;
+	width:4.5%;
+	height:3500px;
+	background-color:#EFDF40
+}
+#rightbar3{
+	opacity:.14;
+	position:absolute;
+	right:5px;
+	width:6%;
+	height:3500px;
+	background-color:#EFDF40
+}
+#rightbar4{
+	opacity:.11;
+	position:absolute;
+	right:5px;
+	width:7.5%;
+	height:685px;
+	background-color:#EFDF40
+}
+#rightbar5{
+	opacity:.08;
+	position:absolute;
+	right:5px;
+	width:9%;
+	height:424px;
+	background-color:#EFDF40
+}
+#rightbar6{
+	opacity:.05;
+	position:absolute;
+	right:5px;
+	width:10.5%;
+	height:262px;
+	background-color:#EFDF40
+}
+#rightbar7{
+	opacity:.02;
+	position:absolute;
+	right:5px;
+	width:12%;
+	height:162px;
+	background-color:#EFDF40
+}

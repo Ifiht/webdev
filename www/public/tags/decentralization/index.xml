@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>decentralization on Eclectic Peddler Atelier</title><link>https://webdev.evlis.org/tags/decentralization/</link><description>Recent content in decentralization on Eclectic Peddler Atelier</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Aug 2023 23:02:21 -0400</lastBuildDate><atom:link href="https://webdev.evlis.org/tags/decentralization/index.xml" rel="self" type="application/rss+xml"/><item><title>Unchaining Your Digital Life from Corporate Greed</title><link>https://webdev.evlis.org/blog/posts/20230811-unchain_overlords/</link><pubDate>Thu, 10 Aug 2023 23:02:21 -0400</pubDate><guid>https://webdev.evlis.org/blog/posts/20230811-unchain_overlords/</guid><description>Tracking ways I&amp;rsquo;m currently wresting control of my digital identity back from the Axis of Evil (MAAMA, a.k.a. Microsoft Amazon Apple Meta &amp;amp; Alphabet):
-Messenger &amp;amp; WhatsApp -&amp;gt; 📧Signal Goodreads -&amp;gt; 📚Open Library Twitter -&amp;gt; 🐘Mastadon GMail -&amp;gt; ⚛️Proton Mail ❌ Delete Instagram ❌ Delete All Personal Data on Google Drive/Mail/Docs I&amp;rsquo;ll add more to this, probably personal justifications, as I have time.
-For right now, my ranking trust for services is:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>decentralization on Eclectic Peddler Atelier</title>
+    <link>https://webdev.evlis.org/tags/decentralization/</link>
+    <description>Recent content in decentralization on Eclectic Peddler Atelier</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Aug 2023 23:02:21 -0400</lastBuildDate><atom:link href="https://webdev.evlis.org/tags/decentralization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unchaining Your Digital Life from Corporate Greed</title>
+      <link>https://webdev.evlis.org/blog/20230811-unchain_overlords/</link>
+      <pubDate>Thu, 10 Aug 2023 23:02:21 -0400</pubDate>
+      
+      <guid>https://webdev.evlis.org/blog/20230811-unchain_overlords/</guid>
+      <description>Tracking ways I&amp;rsquo;m currently wresting control of my digital identity back from the Axis of Evil (MAAMA, a.k.a. Microsoft Amazon Apple Meta &amp;amp; Alphabet):
+ Messenger &amp;amp; WhatsApp -&amp;gt; 📧Signal Goodreads -&amp;gt; 📚Open Library Twitter -&amp;gt; 🐘Mastadon GMail -&amp;gt; ⚛️Proton Mail ❌ Delete Instagram ❌ Delete All Personal Data on Google Drive/Mail/Docs  I&amp;rsquo;ll add more to this, probably personal justifications, as I have time.
+For right now, my ranking trust for services is:</description>
+    </item>
+    
+  </channel>
+</rss>
