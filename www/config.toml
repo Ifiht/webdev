@@ -1,7 +1,7 @@
 baseURL = 'https://webdev.evlis.org/'
 languageCode = 'en-us'
 title = 'Eclectic Peddler Atelier'
-theme = 'sky'
+theme = 'bloodsky'
 disqusShortname = "your_disqus_shortname"
 contentDir = "./content"
 
@@ -15,6 +15,10 @@ contentDir = "./content"
     weight = 0
     url = "/about"
   [[menu.header]]
+    name = "services"
+    weight = 0
+    url = "/pricing"
+  [[menu.header]]
     name = "blog"
     weight = 0
     url = "/blog"
@@ -27,6 +31,7 @@ contentDir = "./content"
   Email = "eclecticpeddlerllc@gmail.comDELETETHISTOPROVEYOUAREHUMAN"
   tagline = "Full Stack Developer"
   about = ""
+  description = "Personal blog and business site of the eclectic peddler."
   ProfilePicture = "/profile.png"
 
 [markup.goldmark.renderer]

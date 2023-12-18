@@ -24,21 +24,11 @@
 		  
           <hr>
 
-          <!-- Date/Time -->
-          <div class="post-date">
-          <h2>{{ .Date.Format "Jan 2, 2006 " }} - {{ .ReadingTime }} MINUTE READ</h2>
-		  </div>
-		  
-          <hr>
-
           <!-- Post Content -->
           <div class="post-text">
           {{ .Content | markdownify }}
           </div>
           <hr />
-          <div class="comments">
-          {{ template "_internal/disqus.html" . }}
-          </div>
           {{ partial "footer.html" . }}
     </div>
     </div>

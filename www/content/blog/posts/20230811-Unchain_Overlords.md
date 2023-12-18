@@ -2,6 +2,7 @@
 title: "Unchaining Your Digital Life from Corporate Greed"
 date: 2023-08-10T23:02:21-04:00
 type: "blog"
+description = "To-Do: describe me!"
 tags:
 - open-web
 - web3.0
