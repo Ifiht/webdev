@@ -1,0 +1,13 @@
+# Generated files by hugo
+/www/public/
+/www/resources/_gen/
+/www/assets/jsconfig.json
+/wwwhugo_stats.json
+
+# Executable may be added to repository
+/www/hugo.exe
+/www/hugo.darwin
+/www/hugo.linux
+
+# Temporary lock file while building
+/www/.hugo_build.lock
