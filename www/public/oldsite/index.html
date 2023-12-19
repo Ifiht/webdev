@@ -1,0 +1,399 @@
+<!DOCTYPE html><!--Command-Opt-H-->
+<html lang="en">
+    <head>
+        <link rel="icon" href="glider.png" type="image/x-icon"> 
+        <link rel="shortcut icon" href="glider.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="boisterous.css">
+        <title>
+            Wind and Water
+        </title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="...">
+        <meta name="robots" content="noindex"><!--<meta http-equiv="refresh" content="240">-->
+    </head>
+    <body>
+        <div id="header">
+            <img src="fader_l.png" alt="broken" id="fade-left"> <img src="fader_r.png" alt="broken" id="fade-right">
+        </div>
+        <div id="floater"></div>
+        <div id="menu"></div>
+            <table id="menu" cellpadding="0">
+                <tr>
+                    <th colspan="2"><a href="images/aurora_full.png"><img src="images/aurora.jpg" alt="icon.png" width="195"></a></th>
+                <tr class="colorshift">
+                    <td class="c1"><img src="images/rapidash.png" alt="icon.png" height="25" width="25"></td>
+                    <td class="c2"><a href="firewall/firewalls.html" style="color:white;">Firewalls</a></td>
+                </tr><tr class="colorshift">
+                    <td class="c1"><img src="images/persian.png" alt="icon.png" height="25" width="25"></td>
+                    <td class="c2"><a href="files/vault.html" style="color:white;">Artwork</a></td>
+                </tr><tr class="colorshift">
+                    <td class="c1"><img src="images/gengar.png" alt="icon.png" height="25" width="25"></td>
+                    <td class="c2"><a href="https://github.com/Ifiht" style="color:white;">GitHub</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="leftbar"></div>
+        <div id="leftbar1"></div>
+        <div id="leftbar2"></div>
+        <div id="leftbar3"></div>
+        <div id="leftbar4"></div>
+        <div id="leftbar5"></div>
+        <div id="leftbar6"></div>
+        <div id="leftbar7"></div>
+        <div id="blog">
+        <div id="subblog">
+            <p class="date">
+                Sunday, October 12th, 2014 - ???
+            </p>
+            <p>
+                <span style="font-weight:bold;">Adventures in Ternary Computing</span>
+            </p>
+            <p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/space.png" height="42" width="42">
+                    </td>
+                    <td>
+                    <div class="quote">
+                        <p>Bender: Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</p>
+                        <p>Fry: It was just a dream, Bender. There's no such thing as two.</p>
+                        <p> - Futurama </p>
+                    </div>
+                    </td>
+                </tr>
+            </table>
+            </p>
+            <p>
+                Several problems exist for anyone making the jump to tri-state computing. Firstly, all the experimental data is in Russian. Secondly, actual hardware implementation may be likened to a whangadoodle - <i>no one</i> knows what it is, and those who do know believe it to be purely fictatious. Then follows the gamut of lesser hurdles, not the least of which is the grand-canyon scale entrenchment of our current binary system, among other things. This post will therefore be continuously updated as I continue to collect the pieces needed to design and implement the jigsaw puzzle that is ternary computing.
+            </p>
+            <p>
+                <a href="http://www.setit.rnu.tn/last_edition/setit2005/electronique/312.pdf">Ternary ALU</a>
+            </p>
+            <hr noshade>
+            <p class="date">
+                Tuesday, September 9th, 2014
+            </p>
+            <p>
+                <span style="font-weight:bold;">Recursivity in the Bourne Again SHell</span>
+            </p>
+            <p>
+                Problem: Crawl through every directory in a tree and catalog its contents.
+            </p>
+            <p>
+                Solution:
+            </p>
+                <div class="code">
+                    <p>#!/bin/bash</p>
+                    <p>recur() {    # Main function declaration</p>
+                    <p>cd "$1"</p>
+                    <p>ls -al</p>
+                    <p>return</p>
+                    <p>}</p>
+                    <p>recur "$1"   # Call the function.</p>
+                </div>
+            <p>
+                This takes us to a directory and lists its contents by executing '$ script.sh directory'. In the directory there may be files, other directories, or nothing. We can ignore files and nothing, but for every directory another instance of the main function must be called. Note: On OS X *.* is actually the format of many psuedo directories disguised as files, e.g. Finder.app.
+            </p>
+                <div class="code">
+                    <p>dir=$(pwd)   # at last a real use for pwd</p>
+                    <p>for z in $dir/*;do</p>
+                    <p>if [[ $z != .* ]] && [[ $z != *.* ]];then    # Skip checking invisible files, self, and above directory</p>
+                    <p>if [ -d "$z" ] && [[ $z != //Volumes ]];then # Make sure z is any directory except /Volumes</p>
+                    <p>recur "$z"   # Call the function on all matches</p>
+                    <p>fi</p>
+                    <p>fi</p>
+                    <p>done</p>
+                </div>
+            <p>
+                Putting it all together:
+            </p>
+                <div class="code">
+                    <p>#!/bin/bash</p>
+                    <p>recur() {</p>
+                    <p>cd "$1"</p>
+                    <p>dir=$(pwd)</p>
+                    <p>ls -al</p>
+                    <p> </p>
+                    <p>for z in $dir/*;do</p>
+                    <p>if [[ $z != .* ]] && [[ $z != *.* ]];then</p>
+                    <p>if [ -d "$z" ] && [[ $z != //Volumes ]];then</p>
+                    <p>recur "$z"</p>
+                    <p>fi</p>
+                    <p>fi</p>
+                    <p>done</p>
+                    <p>return</p>
+                    <p>}</p>
+                    <p>recur "$1"</p>
+                </div>
+            <hr noshade>
+            <p class="date">
+                Tuesday, August 19th, 2014
+            </p>
+            <p>
+                Side by side interlacing reference, using Victor Gabriel Gilbert's <i>The Sleeping Beauty of Dornroschen</i>. Images were made very large by intention (3MB-9MB) to increase loading time and allow for observation. 
+            </p>
+            <p>
+                (for optimal viewing <a href="http://benlakey.com/2012/10/14/throttle-bandwidth-on-mac-os-x/">throttle</a> your bandwidth)
+            </p>
+            <p>
+                <a href="images/The Sleeping Beauty of Dornroschen-Noninterlaced.png">No Interlacing</a>
+            </p>
+            <p>
+                <a href="images/The Sleeping Beauty of Dornroschen-Interlaced.gif">4 pass Vertical Interlacing</a>
+            </p>
+            <p>
+                <a href="images/The Sleeping Beauty of Dornroschen-Adam7 Interlaced.png">7 pass Horizontal &#38; Vertical Interlacing</a>
+            </p>
+            <hr noshade>
+            <p class="date">
+                Sunday, August 17th, 2014
+            </p>
+            <p style="margin:0;">
+                From ASCII to Bits,
+            </p>
+            <p style="margin:0;">
+                using the Mac OS X GNU-based assembler &#38; linker
+            </p>
+                <div class="code">
+                <p>~/asm ls -lh</p>
+                <p>total 8</p>
+                <p>-rw-r--r--  1 nobody  staff    63B 17 Aug 22:58 ff</p>
+                <p>~/asm as -arch x86_64 ff -o ff2</p>
+                <p>~/asm ls -lh</p>
+                <p>total 16</p>
+                <p>-rw-r--r--  1 nobody  staff    63B 17 Aug 22:58 ff</p>
+                <p>-rw-r--r--  1 nobody  staff   320B 17 Aug 23:02 ff2</p>
+                <p>~/asm ld -execute -arch x86_64 -macosx_version_min 10.9 -pie -S ff2 -o ff3 -lSystem</p>
+                <p>~/asm ls -lh</p>
+                <p>total 32</p>
+                <p>-rw-r--r--  1 nobody  staff    63B 17 Aug 22:58 ff</p>
+                <p>-rw-r--r--  1 nobody  staff   320B 17 Aug 23:02 ff2</p>
+                <p>-rwxr-xr-x  1 nobody  staff   4.2K 17 Aug 23:03 ff3</p>
+                </div>
+            <p>
+                4.2 Kilobytes of this:
+            </p>
+                <div class="code">
+                    <p>.text</p>
+                    <p>.globl _main</p>
+                    <p>_main:</p>
+                    <p>movl $0x2000001, %eax</p>
+                    <p>syscall</p>
+                </div>
+            <p>
+                Why the nonsensical waste of space?
+            </p>
+            <p style="margin:0;font-weight:bold;">
+                Addendum
+            </p>
+            <p style="margin:0;">
+                The standard OS X executable uses a mach-o binary, divided into multiple segments based on program length. The above program is small, and has only one segment. From the Developer pages: "For best performance, segments should be aligned on virtual memory page boundaries—4096 bytes for PowerPC and x86 processors." Segments smaller than 4096 bytes are buffered with zeros until they achieve the desired length. This explaines the large filesize for even very small code examples.
+            </p>
+            <hr noshade>
+            <p class="date">
+                Thursday, August 7th, 2014
+            </p>
+            <p>
+                <span style="font-weight:bold;">Unreliable Data Protocol, a test:</span>
+            </p>
+            <p>
+                The User Datagram Protocol provides a stateless connection with no guarantee of packet ordering or delivery. A well known, simple example of UDP is the original echo protocol. A theoretical test of UDP reliability could use the echo protocol to setup a bouncing message between two servers. Eventually one of the servers or an intermediate will "drop the ball". To realize this test I coded a client that sends an initial message, then falls back into a server mode to receive the response. The number of bounces may serve as a rough estimate of network reliability. For instance, testing the protocol on the loopback address results in zero loss. Testing on a private network resulted in a high of 22,158 bounces.
+            </p>
+            <p>
+                <a href="https://github.com/Ifiht/Echo">Github Repository</a>
+            </p>
+            <hr noshade>
+            <p class="date">
+                Tuesday, July 29th, 2014
+            </p>
+            <p>
+                Computers are only 1's and 0's at runtime (excepting the Setun, which is just great anytime). Here's some assembly code to remind myself of that:
+            </p>
+            <div class="code">
+                <p>
+                    CheckNickErrors:: ; 669f
+                </p>
+                <p>
+                    ; error-check monster nick before use
+                </p>
+                <p>
+                    ; must be a peace offering to gamesharkers
+                </p>
+                <p>
+                    ; input: de = nick location
+                </p>
+                <p>
+                    push bc
+                </p>
+                <p>
+                    push de
+                </p>
+                <p>
+                    ld b, PKMN_NAME_LENGTH
+                </p>
+                <p>
+                    .checkchar
+                </p>
+                <p>
+                    ; end of nick?
+                </p>
+                <p>
+                    ld a, [de]
+                </p>
+                <p>
+                    cp "@" ; terminator
+                </p>
+                <p>
+                    jr z, .end
+                </p>
+                <p>
+                    ; check if this char is a text command
+                </p>
+                <p>
+                    ld hl, .textcommands
+                </p>
+                <p>
+                    dec hl
+                </p>
+                <p>
+                    .loop
+                </p>
+                <p>
+                    ; next entry
+                </p>
+                <p>
+                    inc hl
+                </p>
+                <p>
+                    ; reached end of commands table?
+                </p>
+                <p>
+                    ld a, [hl]
+                </p>
+                <p>
+                    cp a, $ff
+                </p>
+                <p>
+                    jr z, .done
+                </p>
+                <p>
+                    ; is the current char between this value (inclusive)...
+                </p>
+                <p>
+                    ld a, [de]
+                </p>
+                <p>
+                    cp [hl]
+                </p>
+                <p>
+                    inc hl
+                </p>
+                <p>
+                    jr c, .loop
+                </p>
+                <p>
+                    ; ...and this one?
+                </p>
+                <p>
+                    cp [hl]
+                </p>
+                <p>
+                    jr nc, .loop
+                </p>
+                <p>
+                    ; replace it with a "?"
+                </p>
+                <p>
+                    ld a, "?"
+                </p>
+                <p>
+                    ld [de], a
+                </p>
+                <p>
+                    jr .loop
+                </p>
+                <p>
+                    .done
+                </p>
+                <p>
+                    ; next char
+                </p>
+                <p>
+                    inc de
+                </p>
+                <p>
+                    ; reached end of nick without finding a terminator?
+                </p>
+                <p>
+                    dec b
+                </p>
+                <p>
+                    jr nz, .checkchar
+                </p>
+                <p>
+                    ; change nick to "?@"
+                </p>
+                <p>
+                    pop de
+                </p>
+                <p>
+                    push de
+                </p>
+                <p>
+                    ld a, "?"
+                </p>
+                <p>
+                    ld [de], a
+                </p>
+                <p>
+                    inc de
+                </p>
+                <p>
+                    ld a, "@"
+                </p>
+                <p>
+                    ld [de], a
+                </p>
+                <p>
+                    .end
+                </p>
+                <p>
+                    ; if the nick has any errors at this point it's out of our hands
+                </p>
+                <p>
+                    pop de
+                </p>
+                <p>
+                    pop bc
+                </p>
+                <p>
+                    ret
+                </p>
+            </div>
+            <p>
+                Full source available <a href="https://github.com/kanzure/pokecrystal">here</a>.
+            </p>
+            <hr noshade>
+            <p class="date">
+                Monday, July 7th, 2014
+            </p>
+            <p>
+                <span style="font-weight:bold;">Purpose:</span> This webspace was created to gather and analyze my personal ideas about computers and their languages. I anticipate that it will become a shameless conglomeration of my favourite bash scripts.
+            </p>
+        <footer>
+            <p>&#169; ifiht, 2014</p>
+        </footer>
+        </div>
+    </div>
+        <div id="rightbar"></div>
+        <div id="rightbar1"></div>
+        <div id="rightbar2"></div>
+        <div id="rightbar3"></div>
+        <div id="rightbar4"></div>
+        <div id="rightbar5"></div>
+        <div id="rightbar6"></div>
+        <div id="rightbar7"></div>
+    </body>
+</html>
