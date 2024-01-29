@@ -60,6 +60,10 @@ hr {
 	font-size: 2rem;
 }
 
+.navbar-full {
+	max-height: 4rem;
+}
+
 .navbar-brand {
 	color: #bf9d77 !important;
 	font-size: 3rem;
