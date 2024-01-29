@@ -29,9 +29,21 @@ body a:hover {
 	text-decoration: underline;
 }
 
+h2 {
+	color: #bf9d77;
+}
+
+hr {
+	border-top: 1px solid #bf9d77;
+}
+
 a {
 	color: #850820;
 }
+a:hover {
+	color: #c91438;
+}
+
 nav {
 	background-color: #210107 !important;
 	background-repeat: repeat-x;
@@ -69,7 +81,7 @@ ul.nav a:hover {
 }
 
 .post-description {
-	color: white;
+	color: #bf9d77;;
 }
 
 .post-title {
@@ -77,7 +89,7 @@ ul.nav a:hover {
 }
 
 .post-text {
-	color: white;
+	color: #ffd9ae;;
 }
 
 .post-date {
@@ -85,7 +97,7 @@ ul.nav a:hover {
 }
 
 .comments {
-    color: white;
+    color: #bf9d77;
 }
 
 .badge.pull-right {
@@ -101,10 +113,6 @@ ul.nav a:hover {
 	padding-right: 15px;
 	padding-left: 15px;
 	text-align: center;
-}
-
-#home-container a {
-	color: #850820;
 }
 
 .description {
