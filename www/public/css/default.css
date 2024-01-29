@@ -103,8 +103,6 @@ ul.nav a:hover {
 	color: #42000d
 }
 
-
-
 #home-container {
 	margin-top:120px;
 	max-width: 100%;
@@ -119,13 +117,13 @@ ul.nav a:hover {
 }
 
 #blog-post {
-	margin-top:68px;
+	padding-top: 3rem; 
 	position: absolute;
 }
 
 #blog-container {
-	margin-top:68px;
-	align="center";
+	padding-top: 3rem; 
+	margin: auto;
 }
 
 #post-header {
