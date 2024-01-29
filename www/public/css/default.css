@@ -29,15 +29,18 @@ body a:hover {
 	text-decoration: underline;
 }
 
-hr {
-	border-top: 1px solid #bf9d77;
-}
-
 a {
 	color: #850820;
 }
 a:hover {
 	color: #c91438;
+}
+a:visited {
+	color: #5e0114;
+}
+
+hr {
+	border-top: 1px solid #bf9d77;
 }
 
 nav {
