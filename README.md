@@ -6,4 +6,4 @@
 `hugo new content/blog/posts/post_title.md`
 
 ## Icons SVG Provider:
-https://fontawesome.com/v4/icons/
+[https://fontawesome.com/v4/icons/](Font Awesome)
