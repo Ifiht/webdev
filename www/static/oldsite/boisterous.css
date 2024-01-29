@@ -138,8 +138,8 @@ p
 	height:100px;
 	position:fixed;
 	margin-top:0;
-	margin-left:0;
-	margin-right:auto;
+	margin-left:auto;
+	margin-right:0;
 	float:top;
 	z-index:-1
 }
