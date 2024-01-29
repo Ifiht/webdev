@@ -1,8 +1,9 @@
 # Generated files by hugo
-/www/public/
-/www/resources/_gen/
-/www/assets/jsconfig.json
-/wwwhugo_stats.json
+#/www/public/
+#/www/resources/_gen/
+#/www/assets/jsconfig.json
+#/wwwhugo_stats.json
+# needed for deployment
 
 # Executable may be added to repository
 /www/hugo.exe
