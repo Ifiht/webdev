@@ -25,7 +25,7 @@ contentDir = "./content"
 [params]
   GithubID = "Ifiht"
   StackOverflowID = "12027622/ifiht"
-  EthereumID = "ifiht.eth"
+  EthereumID = "evlis.eth"
   Name = "Eclectic Peddler Atelier, LLC."
   Email = "eclecticpeddlerllc@gmail.comDELETETHISTOPROVEYOUAREHUMAN"
   tagline = "Full Stack Developer"
