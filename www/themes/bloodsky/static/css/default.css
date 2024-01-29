@@ -32,11 +32,11 @@ body a:hover {
 a {
 	color: #850820;
 }
-a:hover {
-	color: #c91438;
-}
 a:visited {
 	color: #5e0114;
+}
+a:hover {
+	color: #c91438;
 }
 
 hr {
