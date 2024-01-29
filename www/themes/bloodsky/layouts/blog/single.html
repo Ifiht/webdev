@@ -36,9 +36,6 @@
           {{ .Content | markdownify }}
           </div>
           <hr />
-          <div class="comments">
-          {{ template "_internal/disqus.html" . }}
-          </div>
           {{ partial "footer.html" . }}
     </div>
     </div>

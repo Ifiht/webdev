@@ -139,8 +139,11 @@ ul.nav a:hover {
 }
 
 .page-heading {
-  padding-bottom: 3rem; }
-  .page-heading .page-title {
+  padding-bottom: 3rem;
+  padding-top: 3rem; 
+}
+
+.page-heading .page-title {
     font-family: 'Inconsolata', monospace;
     text-transform: uppercase;
     font-size: 7rem;

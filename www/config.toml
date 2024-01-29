@@ -2,7 +2,6 @@ baseURL = 'https://webdev.evlis.org/'
 languageCode = 'en-us'
 title = 'Eclectic Peddler Atelier'
 theme = 'bloodsky'
-disqusShortname = "your_disqus_shortname"
 contentDir = "./content"
 
 [menu]
