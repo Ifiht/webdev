@@ -18,7 +18,7 @@ description = "To-Do: describe me!"
       flex: 1;
       width: 100%; /* Full width initially */
       max-width: 400px; /* Maximum width for small screens */
-      max-height: 400px; /* Maximum width for small screens */
+      max-height: 400px; /* Maximum height for small screens */
       margin-right: 10px; /* Adjust the margin between iframes as needed */
       padding-bottom: 50%; /* 1:1 aspect ratio for the iframe */
     }
