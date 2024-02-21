@@ -11,4 +11,4 @@ Fullstack software engineer with M.S. in Computer Science and 10+ years of exper
 
 - View my crypto blocks on <a href="https://beaconscan.com/validator/675971#proposed" target="_blank">Beaconscan</a>
 
-- Or please send me an <a href="mailto:eclecticpeddlerllc@gmail.comDELETETHISTOPROVEYOUAREHUMAN">email</a> with any questions/requests!
+- Or send me an <a href="mailto:eclecticpeddlerllc@gmail.comDELETETHISTOPROVEYOUAREHUMAN">email</a> with any questions/requests!
