@@ -11,11 +11,12 @@ description = "To-Do: describe me!"
         flex-wrap: wrap;
         align-items: center; 
         justify-content: space-around;
+        gap: 20px;
     }
 
     .iframe-wrapper {
       position: relative;
-      flex: 1;
+      flex: 0 1 440px; /* 1;*/
       width: 100%; /* Full width initially */
       max-width: 400px; /* Maximum width for small screens */
       max-height: 400px; /* Maximum height for small screens */
@@ -71,6 +72,12 @@ description = "To-Do: describe me!"
 </style>
 
 <div class="iframe-container">
+    <div class="iframe-wrapper">
+    <iframe src="https://seashell-app-4h5x8.ondigitalocean.app/" frameborder="0" allowfullscreen></iframe>
+    <div class="overlay" onclick="handleOverlayClick('https://seashell-app-4h5x8.ondigitalocean.app/')">
+        <div class="overlay-text">Visit</div>
+    </div>
+    </div>
     <div class="iframe-wrapper">
     <iframe src="https://www.pacificpokertour.com/" frameborder="0" allowfullscreen></iframe>
     <div class="overlay" onclick="handleOverlayClick('https://www.pacificpokertour.com/')">
