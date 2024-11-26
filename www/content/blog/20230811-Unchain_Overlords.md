@@ -9,12 +9,12 @@ tags:
 - decentralization
 ---
 
-Tracking ways I'm currently wresting control of my digital identity back from the Axis of Evil (MAAMA, a.k.a. Microsoft Amazon Apple Meta & Alphabet):
+Tracking ways I'm currently wresting control of my digital identity back from the digital Charybdis (MAAMA, a.k.a. Microsoft Amazon Apple Meta & Alphabet):
 
 
 1. Messenger & WhatsApp -> 📧[Signal](https://signal.org/)
 2. Goodreads -> 📚[Open Library](https://openlibrary.org/)
-3. Twitter -> 🐘[Mastadon](https://mastodonservers.net/)
+3. Twitter -> 🦋[Bluesky](https://bsky.app/)
 4. GMail -> ⚛️[Proton Mail](https://proton.me/)
 5. ❌ Delete Instagram
 6. ❌ Delete All Personal Data on Google Drive/Mail/Docs
